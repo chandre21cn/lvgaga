@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>立即成为大麦户网商平台会员</title>
+    <meta name="description" content="大麦户信誉平台为为那些零信誉低销量的掌柜提供解决方案,新手快速提升信誉,发任务提升信誉,就选大麦户。" />
+    <meta name="keywords" content="注册" />
+	<link rel="shortcut icon" href="ico/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/wanjia/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/wanjia/static/css/register.css">
+    <link rel="stylesheet" type="text/css" href="/wanjia/static/css/twitter.css">
+    <script type="text/javascript" src="/static/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.validate.js"></script>
+
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="r_top">
+		  <div class="kd">
+				<p class="tb"><a class="logo" href="/">大麦户平台</a><span>个人用户注册</span></p>
+		  </div>
+	</div>
+	<!-- 内容 -->
+	<div id="content">
+		<form id="myForm" method="post" action="/home/User/Register">
+			<ul id="reg_list">
+				<li class="tit2"><span class="chengse">30秒</span>，加入全国最大的互动平台！</li>
+				<li>
+					<p class="tit3">账号</p>
+					<input type="text" maxlength="26" name="username" class="r_bk" field-name="账号" id="username">
+				</li>
+				<li>
+					<p class="tit3">密码</p>
+					<input type="password" maxlength="16" name="password" class="r_bk " field-name="密码" id="password">
+				</li>
+				<li>
+					<p class="tit3">密码确认</p>
+					<input type="password" maxlength="16" name="pass" class="r_bk" id="pass">
+				</li>
+				<li>
+					<p class="tit3">手机号码</p>
+					<input type="text" maxlength="11" name="mobilephone" class="r_bk" vali="mobilephone nulls=1" id="phone">
+				</li>
+				<li>
+					<p class="tit3">QQ</p>
+					<input type="text" maxlength="13" name="qq" class="r_bk" vali="qq nulls=1" id="qq">
+				</li>
+				<li style="z-index:100;">
+					<p class="tit3">E-MAIL</p>
+					<input type="text" maxlength="30" name="email" class="r_bk" vali="email nulls=1" id="email">
+				</li>
+				<li>
+					<p class="tit3">性别</p>
+					<input type="radio"checked="checked" value="0" name="sex"> 男 <input type="radio" value="1" name="sex"> 女
+				</li>
+				<li>
+					<p class="tit3">推荐人</p>
+					<input type="text" maxlength="26" class="r_bk" name="parent" id="parent">
+					<div id="parent-info" class="zq"></div>
+				</li>
+				<li><input type="submit"  class="reg_btn" id='regbutton' value=''></li>
+				<li><a id="agreement" class="STYLE1" href="javascript:;">《大麦户服务协议》</a></li>
+			</ul>
+		</form>
+		
+		    <script type="text/javascript">
+    $().ready(function() {
+    	 $("#myForm").validate({
+    	        rules: {
+    	           username: {
+    	        	   required:true,
+   		    	  	   minlength: 6,
+    	        	   remote: {
+    	        		    url: "/home/User/CheckUsername",     //后台处理程序
+    	        		    type: "post",               //数据发送方式
+    	        		    dataType: "json",           //接受数据格式   
+    	        		    data: {                     //要传递的数据
+    	        		        username: function() {
+    	        		            return $("#username").val();
+    	        		        }
+    	        		    }
+    	        		}
+    	           },
+		    	   email: {
+		    	    required: true,
+		    	    email: true
+		    	   },
+		    	   password: {
+		    	    required: true,
+		    	    minlength: 6
+		    	   },
+		    	   pass: {
+		    	    required: true,
+		    	    minlength: 6,
+		    	    equalTo: "#password"
+		    	   },
+		    	   mobilephone:{
+			    	    required: true,
+			    	    minlength: 11,
+			    	    number:true,
+		    	   },
+		    	   qq:{
+			    	    required: true,
+			    	    minlength: 5,
+			    	    number:true,
+		    	   },
+		    	   email:{
+			    	    required: true,
+			    	    email:true 
+		    	   },
+	    	  },
+    	       messages: {
+    	    	   username: {
+    	    		   required:"请输入用户名",
+    	    		   minlength: jQuery.format("密码不能小于{0}个字 符"),
+    	    		   remote:"用户名已经存在"
+    	    	   },
+		    	  password: {
+		    	    required: "请输入密码",
+		    	    minlength: jQuery.format("密码不能小于{0}个字 符")
+		    	  },
+		    	  mobilephone:{
+        	          required: "请输入手机号码",
+        	          minlength: "请输入正确的手机号码",
+					  number :"请输入正确的手机号码",
+        	  	  },
+        	  	  qq:{
+        	          required: "请输入Email地址",
+        	          email: "请输入正确的email地址"
+        	  	  },
+    		      email: {
+        	          required:"请输入Email地址",
+        	          email:"请输入正确的email地址"
+        	  	  },
+    		  }
+    	    });
+    	});
+	</script>
+		<div id="reg_list" style="margin-top:40px;">
+			<p style="font-size:16px;margin-left:3px;">已有账号？在此登录！</p>
+			<div id="userentry">
+				<span id="loginaccount" class="text1">账户</span>
+				<span id="loginpwd" class="text2">密码</span>
+				<p>
+					<input type="text" maxlength="26" value="" class="r_bk1" id="lusername" name="LoginForm[username]">
+					<span id="miaoname"></span>
+				</p>
+				<p>
+					<input type="password" maxlength="16" class="r_bk2" id="lpassword" name="LoginForm[password]">
+					<span id="miaopwd"></span>
+				</p>
+			</div>
+			<input type="button" id="login_btn" class="dl_btn">
+		</div>
+	</div>
+	<div id="footer">
+	<p>
+		<span class="chengse">官方QQ群：<a style="color:#FE5500;" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c67c64edb769392db32cdfb8be110c498dfde9c3fffc7668d56be1cd99cb069">377804205</a></span>
+		（加群请注明大麦户）</p>
+	<p class="lanse">
+		<a href="http://www.damaihu.com.cn/info/about?p=1">联系我们</a>|
+		<a href="http://www.damaihu.com.cn/info/about?p=2">大麦户规则</a>|
+		<a target="_blank" href="http://www.yaodamai.com/">淘宝信誉查询</a>|
+		<a target="_blank" href="http://www.aizhanggui.com/">爱掌柜淘宝培训</a>
+	<p class="lanse">客户服务热线：4000709880   Copyright &copy; 2012-2020 Damaihu.com All RightsReserved    大麦户版权所有 
+		<a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备13037934号</a>
+	</p>
+</div>
+</body>
+</html>

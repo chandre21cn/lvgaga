@@ -1,0 +1,52 @@
+body {background: #FFFFFF;color: #666666;font: 12px/23px "微软雅黑","雅黑",verdana,arial,"宋体";margin: 0;padding: 0;width: 100%;}
+div, h1, h2, h3, h4, p, form, label, input, img, span {margin: 0;padding: 0;}
+ul { list-style-type: none; margin: 0;padding: 0;}
+a:link, a:visited, a:active {text-decoration: none;color: #1996E6;}
+/*客服本地*/
+.help_down{ top:36px;}
+.kd {position: relative;z-index: 9999;}
+#r_top {background: url(../images/login/reg.gif) repeat-x ;height: 40px;line-height: 40px;}
+#r_top .kd {margin: 0 auto;width: 1000px;}
+#r_top .kd .tb {float: left;width: 870px;}
+#r_top .kd .tb {background: url(../images/login/reg.gif) no-repeat  15px -44px ;color: #FFFFFF;font-size: 14px;font-weight: bold;}
+#r_top .kd .tb a.logo {display: block;float: left;height: 40px;overflow: hidden;text-indent: 999px;width: 125px;}
+#content { margin: 0 auto;width: 1000px;}
+#reg_list {border-right: 1px dotted #DDDDDD;float: left; margin: 30px 0;width: 500px;}
+#reg_list .chengse {color: #FE5500;}
+#reg_list li { position: relative;}
+#reg_list li.tit2 { font-size: 16px;height: 40px;line-height: 40px;}
+#reg_list li .tit3 {color: #666666;font-size: 14px;height: 40px;line-height: 40px;}
+#reg_list li .r_bk, #reg_list li .r_bk2, #reg_list li .r_bk3 { border: 1px solid #DDDDDD;color: #666666;height: 32px; line-height: 32px;padding-left: 5px;width: 297px;}
+#reg_list li .zq {height: 34px;left: 315px;line-height: 20px;position: absolute;top: 43px;width: 160px;}
+#reg_list li .reg_btn, #reg_list li .login_btn { background: url(../images/login/reg.gif) no-repeat  0 -87px ; border: medium none; cursor: pointer;display: block;height: 47px; margin: 28px 0 10px;overflow: hidden;text-indent: 999px;width: 237px;}
+#reg_list li .login_btn { background: url(../images/login/reg.gif) no-repeat 0 -183px ;width: 128px;}
+.login_tip { height: 20px; left: 101px;  position: absolute; top: 60px; width: 260px;}
+#reg_list{border:none;width:440px;padding-left:50px;}
+#reg_list li .login_tip{height:35px; clear:both; position:inherit}
+#reg_list li .login_btn{margin-top:0px;}
+#reg_list li span{font-size: 14px;}
+
+#myForm li .error{border: 1px solid #EE5F5B;}
+#myForm li .success{border: 1px solid #91ED6D;}
+#myForm li .zq{color: #EE5F5B;}
+/*邮箱检测友好*/
+#myForm li #email-check{border:1px solid #ddd;width: 302px;position: absolute;left: 0;top: 74px;background: white;z-index: 100;display: none;}
+#myForm li #email-check h3{margin: 6px;font-size: 14px;}
+#myForm li #email-check span{width: 297px;float: left;padding: 5px 0 5px 5px;cursor: pointer;}
+#myForm li #email-check span:hover{background: #ddd;}
+/*登录*/
+#userentry,#interlocution{width: 300px;height:175px;position: relative;margin-top: 10px;}
+#userentry .text1{font-size: 14px;left: 5px;position: absolute;top: 5px;}
+#userentry .text2{font-size: 14px;left: 5px;position: absolute;top: 85px;}
+#userentry .r_bk1{ border: 1px solid #DDDDDD;color: #666666;height: 32px;left: 3px;line-height: 32px;position: absolute;text-indent: 5px;top: 35px;width: 260px;}
+#userentry .r_bk2{border: 1px solid #DDDDDD;color: #666666;height: 32px;left: 3px;line-height: 32px;position: absolute;text-indent: 5px;top: 116px;width: 260px;}
+#reg_list .dl_btn{background: url(../images/login/reg.gif) no-repeat 0 -183px;width: 128px;height:47px;border: medium none;cursor: pointer;overflow: hidden;margin-left: 5px;}
+#userentry #miaoname {position: absolute;top: 5px;left: 45px;color: #F03;}
+#userentry #miaopwd{position: absolute;top: 85px;left: 45px;color: #F03;}
+#interlocution .usertour {position: absolute;top: 10px;left: 5px;font-size: 15px;}
+#interlocution #loginquestionid {border: 1px solid #DDDDDD;color: #666666;height: 25px;left: 5px;line-height: 32px;position: absolute;top: 70px;width: 170px;}
+#interlocution .answerCont {border: 1px solid #DDDDDD;color: #666666;height: 25px;left: 5px;line-height: 32px;position: absolute;top: 130px;width: 168px;}
+#interlocution .usertourText {font-size: 14px;left: 5px;position: absolute;top: 40px;}
+#interlocution .answer {font-size: 14px;left: 5px;position: absolute;top:100px;}
+#interlocution #usertourError{position: absolute;top: 100px;left: 45px;color: #F03;}
+

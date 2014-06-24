@@ -1,0 +1,51 @@
+
+.ico{background: url(/images/ico.png?v=1.1) no-repeat;}
+
+.ico.layer-2{background-position: 0px 0px;width:173px;height: 176px;}
+.ico.layer-3{background-position: -192px 0px;width:181px;height: 176px;}
+.ico.layer-4{background-position: -403px 0px;width:172px;height: 176px;}
+
+.ico.logo-mini{background-position: -241px -195px;width:36px;height: 28px;}
+.ico.msg{background-position: -300px -198px;width:18px;height: 15px;}
+.ico.phone{background-position: -340px -198px;width:14px;height: 19px;}
+.ico.posi{background-position: -379px -198px;width:14px;height: 15px;}
+.ico.smile{background-position: -417px -198px;width:16px;height: 17px;}
+.ico.coffee{background-position: -455px -198px;width:17px;height: 15px;}
+.ico.left-arrow{background-position: -268px -275px;width:7px;height: 8px;}
+.ico.top-arrow{background-position: -301px -273px;width:7px;height: 13px;}
+.ico.circle-qq{background-position: -346px -234px;width:26px;height: 27px;}
+.ico.circle-phone{background-position: -379px -234px;width:26px;height: 27px;}
+.ico.stext{background-position: -430px -230px;width:36px;height: 38px;}
+.ico.qq{background-position: -491px -185px;width:84px;height: 97px;}
+
+.ico.login{background-position: 0px -196px;width:105px;height: 43px;}
+.ico.login:hover{background-position: 0px -247px;width:105px;height: 43px;}
+
+.ico.register{background-position: -113px -196px;width:105px;height: 43px;}
+.ico.register:hover{background-position: -113px -247px;width:105px;height: 43px;}
+
+
+.service{position: fixed;right: 210px;top:300px;font-size: 12px;z-index:10000}
+.service .info{z-index: 1;position: absolute;left:-166px;width: 164px;height: 320px;border: 1px solid #74969f;background: white;display: none;}
+.service .info a:hover{color: black;}
+.service .info .i-h{background: #aad8fa;height: 33px;width: 162;margin: 1px;}
+.service .info label{display: block;}
+.service .s-title{color: black;margin-top: 5px;}
+.service .s-h{position: relative;width: 87px;height: 120px;background: #bbe9ff;cursor: pointer;}
+.service .s-h1{position: absolute;color: #2c6e9e;top: 10px;left:10px;font-weight: bold;font-size: 14px;}
+.service .s-h-ico{display: inline-block;margin-left: 90px;margin-top: 5px;}
+.service .s-h-ico i{margin-right: 5px;}
+.service .i-1{padding:5px 10px;}
+.service .i-2{border-top: dotted 1px #d4d4d4;border-bottom: dotted 1px #d4d4d4;padding:10px 10px 0px 10px;}
+.service .i-2 label{height: 30px;line-height: 30px;}
+.service .i-2 span{display: block;margin-top: 20px;margin-bottom: 5px}
+.service .i-2 label a img{vertical-align: middle;}
+.service .i-3{padding: 10px;}
+.service .qq-indent{margin: 5px 0px;}
+
+.service .qq{position: absolute;top:-30px;}
+.service .s-h .t{position: absolute;top:60px;left: 8px;}
+.service .s-h .left-arrow{position: absolute;top:25px;left: 5px;}
+.service .s-h .stext{position: absolute;top:10px;left: 20px;}
+.service .s-f{width: 72px;height: 28px;background: #82cbec;padding-top: 10px;padding-left: 15px;}
+.service i{display: inline-block;}

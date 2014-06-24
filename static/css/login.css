@@ -1,0 +1,36 @@
+body {background: none repeat scroll 0 0 #FFFFFF;color: #666666;font: 12px/23px "微软雅黑","雅黑",verdana,arial,"宋体";margin: 0;padding: 0;width: 100%;}
+div, h1, h2, h3, h4, p, form, label, input, img, span {margin: 0;padding: 0;}
+a:link, a:visited, a:active {text-decoration: none;}
+/*客服本地*/
+.help_down{ top:36px;}
+#r_top {background: url(../images/login/reg.gif) repeat-x scroll 0 0 ;height: 40px;line-height: 40px;}
+#r_top .kd {margin: 0 auto;width: 1000px;}
+.kd {position: relative;z-index: 9999;}
+#r_top .kd .tb {float: left;width: 870px;}
+#r_top .kd .tb {background: url(../images/login/reg.gif) no-repeat scroll 15px -44px transparent;color: #FFFFFF;font-size: 14px;font-weight: bold;}
+#r_top .kd .tb a.logo {display: block;float: left;height: 40px;overflow: hidden;text-indent: 999px;width: 125px;}
+.menu_qq .qq_help {background: url(../images/public/tx_ico.gif) no-repeat scroll 0 -958px transparent;padding-left:30px;color:white;cursor: pointer;}
+.menu_qq a {color: #FFFFFF;font-family: Tahoma,​Helvetica,​Arial,​宋体;font-size: 12px;}
+.menu_qq {float: right;text-align: left;width: 130px;}
+#content {margin: 0 auto;width: 1000px;}
+.login_gg {float: left;height: 290px;margin: 75px 20px 50px;width: 498px;}
+.login_info {background: url(../images/login/login.gif) no-repeat scroll 0 0 transparent;float: left;height: 322px;margin: 75px 0 50px;position: relative;width: 410px;}
+.login_tip {height: 20px;left: 101px;position: absolute;top: 60px;width: 260px;}
+.login_info .text1, .login_info .text2 {font-size: 14px;left: 43px;position: absolute;top: 93px;}
+.login_info .text2 {top: 145px;}
+.login_info .r_bk1, .login_info .r_bk2 {border: 1px solid #DDDDDD;color: #666666;height: 32px;left: 100px;line-height: 32px;position: absolute;text-indent: 5px;top: 88px;width: 260px;}
+.login_info .r_bk2 {top: 140px;}
+.login_info .dl_btn {background: url(../images/login/reg.gif) no-repeat scroll 0 -138px transparent;border: medium none;cursor: pointer;height: 41px;left: 101px;line-height: 99px;overflow: hidden;position: absolute;text-indent: 999px;top: 200px;width: 115px;}
+.login_info .log_wb {left: 220px;position: absolute;top: 218px;}
+.login_info .log_wb .chengse {text-decoration: underline;}
+.login_info .log_wb a {margin-right: 10px;}
+.login_info .log_wb .chengse {color: #FE5500;}
+#jlkh{background:#E7D6AB;float: left;text-align: center;width: 100%;margin-bottom: -15px;}
+#loginquestionid{border: 1px solid #DDDDDD;color: #666666;height: 25px;left: 110px;line-height: 32px;position: absolute;top: 105px;width: 170px;}
+.usertour{position: absolute;top: 65px;left: 42px;font-size: 15px;}
+.usertourText {font-size: 14px;left: 43px;position: absolute;top: 105px;}
+.answer{font-size: 14px;left: 70px;position: absolute;top: 145px;}
+.answerCont{border: 1px solid #DDDDDD;color: #666666;height: 25px;left: 110px;line-height: 32px;position: absolute;top: 145px;width: 168px;line-height: 200%;}
+#miaoname{position: absolute;top: 120px;left: 100px;color: #F03;}
+#miaopwd{position: absolute;top: 170px;left: 100px;color: #F03;}
+#usertourError{position: absolute;top: 126px;left: 110px;color: #F03;}
